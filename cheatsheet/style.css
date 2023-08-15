@@ -1,0 +1,81 @@
+html * {
+    font-family: Georgia, serif;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+body {
+    background-color: rgba(44, 44, 149, 0.705);
+}
+header {
+    text-align: center;
+    margin-top: 80px;
+    border-bottom: 2px double gray;
+    line-height: 0.9;
+    font-size: 70px;
+
+
+}
+
+h1 {
+    letter-spacing: -0.084em;
+}
+
+table {
+    border: 2px dotted rgba(0, 0, 0, 0.7);
+    background-color: rgba(43, 85, 143, 0.557);
+    margin: 50px auto 300px auto;
+    max-width: 65%;
+    font-size: 17px;
+    
+}
+
+table * {
+    border: 2px dotted rgba(0, 0, 0, 0.7);
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    padding: 7px;
+}
+
+
+.star {
+    border: none;
+}
+
+.cann {
+    border: none;
+}
+
+.syntax {
+    color: rgb(21, 207, 207);
+    min-width: 180px;
+
+}
+
+.syntax p {
+    background-color: black;
+}
+
+.syntax p span {
+    color: white;
+    border: none;
+}
+
+.effect, tfoot {
+    text-align: justify;
+}
+
+.star {
+color: rgb(4, 42, 67);
+}
+tfoot td {
+    font-size: 13px;
+}
