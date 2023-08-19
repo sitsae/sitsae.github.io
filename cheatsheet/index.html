@@ -6,57 +6,63 @@
 
 <html>
 
-<body>
-
     <header>
         <h1> The display selector and common values</h1>
     </header>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Display value syntax</th>
-                <th>Effect</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="syntax"><p>display<span>:</span> block<span>;</span></p></td>
-                <td class="effect">The element generates a block box, generating line breaks both before and after the element when in the normal flow.</td>
-            </tr>
-            <tr>
-                <td class="syntax"><p>display<span>:</span> inline<span>;</span></p></td>
-                <td class="effect">The element generates one or more inline boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space. The elements size <span class="cann">cannot</span> be altered.</td>
-            </tr>
-            <tr>
-                <td class="syntax"><p>display<span>:</span> inline-block<span>;</span></p></td>
-                <td class="effect">The element generates one or more inline boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space. The elements size <span class="cann">can</span> be altered.</td>
-            </tr>
-            <tr>
-                <td class="syntax"><p>display<span>:</span> flex<span>;</span></p></td>
-                <td class="effect">The element behaves like a block-level element and lays out its content according to the <span class="star">*flexbox model</span>.</td>
-            </tr>
-            <tr>
-                <td class="syntax"><p>display<span>:</span> grid<span>;</span></p></td>
-                <td class="effect">The element behaves like a block-level element and lays out its content according to the <span class="star">**grid model.</span></td>
-            </tr>
-        </tbody>
+    <body>
 
-        <tfoot>
-            <tr>
-               <td colspan="2">*Since flexbox is a whole module and not a single property, it involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as “flex container”) whereas the others are meant to be set on the children (said “flex items”).</td> 
-            </tr>
-            <tr>
-                <td colspan="2">**A grid is a set of intersecting horizontal and vertical lines defining columns and rows. Elements can be placed onto the grid within these column and row lines.</td>
-            </tr>
-        </tfoot>
+        <nav>
+            <h2 class="pages">Selectors <span id="bracket"> &#123</span></h2>
+            
+            <ul>
+                <li><a href="#">display<span>: ;</span></a></li>
+                <li><a href="positionsheet.html">position<span>: ;</span></a></li>
+            </ul>
+            <p id="bracket">&#125</p>
+        </nav>
 
-    </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Display value syntax</th>
+                    <th>Effect</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="syntax"><p>display<span>:</span> block<span>;</span></p></td>
+                    <td class="effect">The element generates a block box, generating line breaks both before and after the element when in the normal flow.</td>
+                </tr>
+                <tr>
+                    <td class="syntax"><p>display<span>:</span> inline<span>;</span></p></td>
+                    <td class="effect">The element generates one or more inline boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space. The elements size <span class="cann">cannot</span> be altered.</td>
+                </tr>
+                <tr>
+                    <td class="syntax"><p>display<span>:</span> inline-block<span>;</span></p></td>
+                    <td class="effect">The element generates one or more inline boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space. The elements size <span class="cann">can</span> be altered.</td>
+                </tr>
+                <tr>
+                    <td class="syntax"><p>display<span>:</span> flex<span>;</span></p></td>
+                    <td class="effect">The element behaves like a block-level element and lays out its content according to the <span class="star">*flexbox model</span>.</td>
+                </tr>
+                <tr>
+                    <td class="syntax"><p>display<span>:</span> grid<span>;</span></p></td>
+                    <td class="effect">The element behaves like a block-level element and lays out its content according to the <span class="star">**grid model.</span></td>
+                </tr>
+            </tbody>
 
-</body>
-<footer>
-    <nav>
-        <!-- ul for navigering mellom alle sider-->
-    </nav>
-</footer>
+            <tfoot>
+                <tr>
+                <td colspan="2">*Since flexbox is a whole module and not a single property, it involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as “flex container”) whereas the others are meant to be set on the children (said “flex items”).</td> 
+                </tr>
+                <tr>
+                    <td colspan="2">**A grid is a set of intersecting horizontal and vertical lines defining columns and rows. Elements can be placed onto the grid within these column and row lines.</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </body>
+        
 </html>
