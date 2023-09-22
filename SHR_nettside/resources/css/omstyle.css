@@ -1,0 +1,109 @@
+#om-page, #om-page .container, #om-page .center, #om-page .text-box, #people-wrapper, .background-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#om-page .container {
+    width: 75%;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+#om-page .center, #om-page .text-box, .background-wrapper {
+    flex-direction: column;
+}
+
+.background-wrapper {
+    max-height: 25rem;
+    width: 100%;
+    margin-bottom: 3.5rem;
+    border: 1px solid hsla(204, 57%, 80%, 0.753);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(128, 128, 128, 0.349);
+}
+
+#om-page .background-wrapper .text-box {
+    background-image: url('../media/lager.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    gap: 2rem;
+    color: hsl(205, 74%, 10%);
+    border-radius: 0.75rem;
+    padding: 3rem 0;
+
+}
+
+#om-page .background-wrapper .text-box p, #om-page .background-wrapper .text-box h1 {
+    padding: 0 10%;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    margin: 0 5%;
+    border: 1px solid hsla(204, 57%, 80%, 0.753);
+    border-radius: 4px;
+}
+
+#om-page .background-wrapper .text-box h1 {
+    color: hsl(302.9, 19.8%, 58.4%);
+}
+
+p#text {
+    font-weight: 300;
+}
+
+#om-page #text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#om-page .background-wrapper .text-box a {
+    font-size: 16px;
+    min-width: 14rem;
+}
+
+#people-wrapper {
+    gap: 1rem;
+}
+
+.people {
+    border-radius: 0.75rem;
+    border: 1px solid hsla(204, 57%, 80%, 0.753);
+    z-index: 5;
+    box-shadow: 0 4px 6px rgba(128, 128, 128, 0.349);
+ 
+}
+
+.img-container {
+    min-height: 10rem;
+    width: 100%;
+    overflow: hidden;  
+    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;  
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.people .text-box {
+    padding: 1rem 0.55rem;
+}
+
+.people .text-box p, .people .text-box h3 {
+    font-size: 1rem;
+}
+ 
+
+
+
+
+
+
+

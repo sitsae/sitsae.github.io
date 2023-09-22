@@ -1,0 +1,35 @@
+section#tjeneste-wrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#tjeneste-wrapper div.container {
+    width: 92%;
+
+}
+
+div.center, .text-box, .img-contanier {
+    display: flex;
+}
+div.center {
+    padding: 1rem 5%;
+}
+
+div.img-container {
+    width: 45%;
+    overflow: hidden;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.text-box {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
