@@ -10,9 +10,17 @@ section#tjeneste-wrapper {
 
 div.center, .text-box, .img-contanier {
     display: flex;
+    min-width: 240px;
 }
 div.center {
     padding: 1rem 5%;
+}
+
+@media screen and (max-width:500px) {
+    div.center {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 div.img-container {
