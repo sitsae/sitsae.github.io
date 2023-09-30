@@ -2,13 +2,16 @@
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    position: relative;
+}
+
+body {
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 html {
@@ -24,19 +27,21 @@ header {
     display: flex; 
     width: 100%;
     background: linear-gradient(90deg, hsl(204, 57%, 85%) , hsl(252, 19%, 75%));
-    height: 6rem;
+    min-height: 6rem;
     justify-content: end;
     box-shadow: 0 3px 5px rgba(128, 128, 128, 0.165);
     position: fixed;
     top: 0;
     z-index: 10;
     border-bottom: 2px solid hsl(204, 57%, 80%);
+    flex-wrap: wrap;
 }
+
+
 
 main {
     position: relative;
     top: 6rem;
-    min-width: 810px;
 }
 
 h1, h2 {
@@ -58,12 +63,12 @@ h1, h2 {
     flex-grow: 1;
     margin: auto 5%;
 }
-
+/* hello */
 .nav ul {
     display: flex;
     justify-content: end;
     padding-right: 5%;
-    flex-grow: 0;
+    /* flex-grow: 0; */
     gap: 2rem;
     
 }
@@ -76,6 +81,20 @@ h1, h2 {
     text-align: center;
     border-radius: 4px;
     font-weight: 400;
+}
+
+@media screen and (max-width:1000px) {
+    header  {
+         justify-content: center ; 
+        
+    } 
+    /* nav {
+    } */
+    nav ul  {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        padding: 0;
+    }
 }
 
 section {
@@ -101,6 +120,11 @@ section {
     position: relative;
     top: -1rem;
 }
+ @media screen and (max-width: 810px) {
+    #splash .container .flex-wrapper, #contact .container {
+        flex-wrap: wrap;
+    }
+ }
 
 #splash .flex-wrapper {
     display: flex;
@@ -111,7 +135,7 @@ section {
 }
 
 #splash div.image-container {
-    width: 50%;
+    min-width: 400px;
     min-height: 16rem;
     overflow: hidden;
     border-radius: 0.75rem;
@@ -127,7 +151,7 @@ section {
 #splash .text-box {
     flex-grow: 0;
     padding: 0.5rem;
-    width: 50%;
+    min-width: 400px;
     text-align: center;
     padding: 3% 6%;
     font-size: 1.2rem;
@@ -147,6 +171,8 @@ section {
     width: 95%;
 }
 
+
+
 #thumbnail .container {
     display: flex;
     flex-direction: column;
@@ -155,10 +181,32 @@ section {
     justify-content: space-evenly;
     align-items: center;
 }
+#thumbnail #om, #thumbnail #tjenester {
+    min-width: 186px;
+}
 
 #prosjekter {
     flex: 2 1 50%;
     max-width: 50%;
+    min-width: 250px;
+}
+
+/* Ser litt rart ut her */
+@media screen and (max-width:810px) {
+    #thumbnail {
+        flex-wrap: wrap;
+    }
+/* disse to burde tilsammen dekke hele skjermen */
+    #om, #tjenester {
+        max-width: 96% !important;    }
+    /* denne dekker skjermen med denne regelen */
+    #prosjekter {
+        max-width: 100%;
+    }
+    main {
+        top: 9rem;
+    }
+    
 }
 
 #om, #tjenester {
@@ -191,6 +239,7 @@ div.half img {
     height: auto;
 }
 
+/* skifte navn på nav-buttons */
 .nav-buttons p {
     background-color: hsla(204, 57%, 80%, 0.4);
     padding: 0 2rem;
@@ -210,6 +259,7 @@ div.half img {
     padding: 2.5rem 2rem 2rem 2rem;
     width: 100%;
     margin: 1rem 0;
+    overflow: hidden;
 
 }
 
@@ -223,14 +273,13 @@ div.half img {
 }
 
 #contact .image-container {
-    width: 50%;
+    min-width: 400px;
     min-height: 16rem;
     overflow: hidden;
     background-color: hsla(35, 61%, 76%, 0.645);
     border-radius: 0.75rem;
     border: 1px solid hsla(204, 57%, 80%, 0.753);
     box-shadow: 0 4px 6px rgba(128, 128, 128, 0.349);
-
 }
 
 #contact .image-container form {
@@ -242,9 +291,9 @@ div.half img {
 }
 
 #contact .text-box {
-    flex-grow: 0;
+    /* flex-grow: 0; */
     padding: 0.5rem;
-    width: 50%;
+    min-width: 400px;
     text-align: center;
     padding: 3% 6%;
     font-size: 1.2rem;

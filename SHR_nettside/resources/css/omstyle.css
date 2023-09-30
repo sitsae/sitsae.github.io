@@ -6,7 +6,7 @@
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.rem;
 }
 
 #om-page .container {
@@ -14,6 +14,16 @@ p {
     margin: 3rem;
     padding: 2rem;
 }
+
+@media screen and (max-width: 750px) {
+    #om-page .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    
+}
+
 
 #om-page .center, #om-page .text-box, .background-wrapper {
     flex-direction: column;
@@ -36,7 +46,7 @@ p {
     gap: 2rem;
     color: hsl(205, 74%, 10%);
     border-radius: 0.75rem;
-    padding: 3rem 0;
+    padding: 1rem 0;
 
 }
 
@@ -71,12 +81,22 @@ p#text {
     gap: 1rem;
 }
 
+@media screen and (max-width: 980px) {
+    #people-wrapper {
+        flex-wrap: wrap;
+    }
+    .people{
+        max-width: 15rem;
+    }
+}
+
 .people {
     border-radius: 0.75rem;
     border: 1px solid hsla(204, 57%, 80%, 0.753);
     z-index: 5;
     box-shadow: 0 4px 6px rgba(128, 128, 128, 0.349);
- 
+    min-width: 10rem;
+    
 }
 
 .img-container {
