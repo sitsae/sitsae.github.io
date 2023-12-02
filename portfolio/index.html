@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sigurd Torve Sæther | Portfolio</title>
+    <meta name="" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="resources/styles.css" />
+    <link rel="stylesheet" href="resources/toggle_switch.css" />
+  </head>
+  <body>
+    <div id="dark-mode">
+      <span>Dark Mode Off/On</span>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div id="center">
+      <header>
+        <div id="header-text">
+          <h1>Sigurd Torve Sæther</h1>
+          <h2>Webutvikler|Fullstack-Utvikler|Selvlært</h2>
+        </div>
+        <address>
+          <a href="#" class="small-sphere"
+            ><img
+              src="resources/media/contact1.png"
+              class="sphere-icon"
+              id="contact-sphere"
+              alt=""
+          /></a>
+          <a
+            href="https://discordapp.com/users/888715342044614656"
+            target="_blank"
+            class="small-sphere hidden discord"
+            ><img
+              src="resources/media/discord.png"
+              class="sphere-icon"
+              id="discord"
+              alt=""
+          /></a>
+          <a
+            href="http://github.com/sitsae"
+            target="_blank"
+            class="small-sphere hidden github"
+            ><img
+              src="resources/media/github.png"
+              class="sphere-icon"
+              id="git-hub"
+              alt=""
+          /></a>
+          <a href="mailto:torve_s@live.no" class="small-sphere hidden email"
+            ><img
+              src="resources/media/email.png"
+              class="sphere-icon"
+              id="email"
+              alt=""
+          /></a>
+        </address>
+      </header>
+      <main>
+        <div id="frame">
+          <img class="arrow abt" src="resources/media/right-arrow.png" />
+          <div id="about" class="card">
+            <p>
+              Selvlært koder fra Oslo. Lang erfaring innen helse og bildediagnostikk.<br>
+              Sykling og ski som interresser utenfor koding. <br><br>
+              Ta en titt på fremhevede prosjekter ved å trykke på profilbildet av meg,
+              eller ta en titt innom min github-konto for å se mindre prosjekter.
+            </p>
+          </div>
+          <div id="skills" class="card">
+            <div class="flex-container">
+              <div id="left-side-card">
+                <img
+                  src="resources/media/js-icon.png"
+                  id="js"
+                  class="logo-sphere"
+                  alt="JavaScript logo"
+                />
+                <img
+                  src="resources/media/python-icon.png"
+                  id="python"
+                  class="logo-sphere"
+                  alt="Python logo"
+                />
+                <img
+                  src="resources/media/html-icon.png"
+                  id="html-css"
+                  class="logo-sphere"
+                  alt="HTML logo"
+                />
+              </div>
+              <div id="right-side-card">
+                <p class="skill">JavaScript</p>
+                <p class="skill">Python</p>
+                <p class="skill">HTML/CSS</p>
+              </div>
+              <!-- legg til SQL, mocha, react, jist -->
+              <!-- sorter etter kodespraak, test, database osv. -->
+            </div>
+            <img class="arrow skl" src="resources/media/right-arrow.png" />
+          </div>
+        </div>
+        <a href="#" id="portrait">
+          <h3 id="project-heading">Prosjekter</h3>
+          <img src="resources/media/sigurd.jpg" alt="Sigurd Torve Sæther" />
+        </a>
+        <div id="four-circles">
+          <a href="#" class="project-sphere" id="project-one"
+            ><em>Project Name</em></a
+          >
+          <a href="#" class="project-sphere" id="project-two"
+            ><em>Project Name</em></a
+          >
+          <a href="#" class="project-sphere" id="project-three"
+            ><em>Project Name</em></a
+          >
+          <a href="#" class="project-sphere" id="project-four"
+            ><em>Project Name</em></a
+          >
+          <a href="#" id="project-x">X</a>
+        </div>
+      </main>
+    </div>
+
+    <script src="resources/main.js" defer></script>
+  </body>
+</html>
